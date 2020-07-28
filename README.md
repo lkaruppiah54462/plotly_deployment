@@ -35,5 +35,11 @@ was presented with plotly -indicator type model.
 ![](dashboard_zero_washfreq.PNG)
 ![](dashboard_null_otu.PNG)
 
+##D. Recommendation
+1. Have labels for the bubble chart.
+2. Make sure the bar chart etc , are based on ordered OTU data for selecting top 
+ten or max if length is less than 10.
+3. If the list is empty , clear the html area.
+
 
 

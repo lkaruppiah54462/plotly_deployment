@@ -51,9 +51,12 @@ function buildMetadata(sample) {
         {
             domain: { x: [0, 1], y: [0, 1] },
             value: result.wfreq, 
-            title: { text: "Washing Frequency" },
+            title: { text: "Belly Button Washing Frequency <br> Scrubbs per Week" },
             type: "indicator",
-            mode: "gauge+number"
+            mode: "gauge+number",
+            gauge: {
+                axis: { range: [null, 9] }
+            }
         }
      ];
     
@@ -112,7 +115,7 @@ function buildCharts(newsample){
         var data = [trace];
         var layout = {
             title: "Top Ten(or Max)OTUs",
-            yaxis: { title: "OTU id" },
+            //yaxis: { title: "OTU id" },
             xaxis: { title: "Sample Values"}
         };
         //let PANEL = d3.select("#bar");
